@@ -1,0 +1,372 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    
+}
+.main{
+display: flex;
+height: 100vh;
+padding: 0.5rem;
+
+}
+.sidebar_menu{
+    background-color: green;
+    width: 310px;
+    border-radius: 1rem;
+    background-color: black;   /*1rem=16px;*/
+    margin: 1rem;
+    margin-right: 0.6rem;
+}
+.main_content{
+    background-color: #121212;
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding:0rem 1.5rem 0rem 1.5rem;
+    padding-left: 3.6rem;
+    padding-right: 3.5rem;
+}
+.music_player{
+    background-color: black;
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+    height: 95px;
+}
+
+.nav{
+    background-color: #121212;
+    height: 100px;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+
+}
+.nav_option{
+    line-height: 2.9rem;
+    opacity: 0.7;
+    padding-left: 1rem;
+}
+.nav_option i{
+        padding-right: 1rem;
+        font-size: 1.5rem;
+}
+
+.nav_option:hover{
+    opacity: 1;
+}
+.library{
+    background-color: #121212;
+    height: 100%;
+    border-radius: 1rem;
+    margin-top: 0.8rem;
+    padding-top: 1rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.7;
+    
+   
+
+}
+.lib_option a {
+    text-decoration: none;
+    color: white;
+    padding-left: 1rem;
+}
+.lib_option img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.icons{
+    display: flex;
+    
+    font-size: 1.25rem;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1.25rem;
+
+}
+.icons i:hover{
+    opacity: 1;
+}
+.lib_boxe{
+    background-color: #232323;
+    height: 130px;
+    border-radius: 1rem;
+    padding: 1rem ;
+    margin: 1rem;
+
+}
+.box_p1{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.box_p2{
+    font-size: 0.8rem;
+    opacity: 0.8;
+    padding-bottom: 1rem;
+}
+.badge{
+    background-color: white;
+    width: fit-content;
+    border-radius: 1rem;
+    width: 140px;
+    height: 30px;
+    border: none;
+    font-weight: 600;
+    margin-top: 1rem;
+
+}
+.sticky_nav{
+    margin: 1rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    border-radius: 2rem;
+    z-index: 1;
+    width: 100%;
+    
+
+}
+.sticky_nav_icons i{
+
+    padding-right: 1.5rem;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    opacity: 0.8;
+}
+.sticky_nav_icons i:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.sticky_nav_options button{
+     border-radius: 1rem;
+     font-weight: 600;
+     background-color: white;
+     height: 40px;
+     padding: 0.5rem;
+     border: none;
+}
+.sticky_nav_options button:hover{
+    cursor: pointer;
+}
+
+.nav_icon{
+    margin-right: 1rem;
+}
+.sticky_nav-options i{
+    margin-left: 1rem;
+   
+}
+@media(max-width:1000px){
+    .hide{
+            display: none;
+    }
+}
+.card_container{
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+
+}
+.card {
+    background-color: #232322;
+    width: 150px;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    margin-left:1rem;
+    margin-top:1rem;
+}
+.card_img {
+    width: 100%;
+    border-radius: 0.6rem;
+}
+.card_title {
+    font-weight: 700;
+   
+}
+.card_info {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.line {
+    width: 90%;
+    height:50%;
+    border-top: 1px solid wheat;
+    opacity: 0.5;
+} 
+.music_player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+}
+   
+.player{
+    width: 50%;
+    
+  height: 100%;
+   
+    
+    
+}
+.cantrols{
+    width: 25%;
+}
+
+.playback_cantrols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.playback_progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.playback_cantrols i{
+    margin: 1.25rem;
+    opacity: 0.75;
+    font-size: 1.1rem;
+   
+}
+.playback_cantrols i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.range{
+    appearance: none;
+    width: 70%;
+    cursor: pointer;
+   
+}
+   
+   
+.range::-webkit-slider-runnable-track {
+    height: 0.2rem;
+    
+    border-radius: 180px;
+    background-color: #ddd;
+
+}
+.range::-webkit-slider-thumb {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -6px;
+
+}
+.album{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photo{
+         width: 4.35rem;
+         height: 4.35rem;
+         border-radius: 0.4rem;
+         margin: 0.4rem;
+}
+.photo img{
+         width: 4.35rem;
+         height: 4.35rem;
+         border-radius: 0.4rem;
+}
+.photo_title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    opacity: 1;
+    
+}
+.singer{
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+.singer:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.favourite{
+    opacity: 0.7;
+}
+.favourite:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.cantrols {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 300;
+    font-size: 0.85rem;
+    padding-right: 0.5rem;
+   
+}
+.cantrols i{
+    opacity: 0.7;
+}
+.cantrols i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.volume_range{
+    appearance: none;
+    
+}
+.volume_range::-webkit-slider-runnable-track{
+    height: 0.15rem;
+    border-radius: 100px;
+    background-color: #ddd;
+    
+}
+.volume_range::-webkit-slider-thumb{
+    appearance: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -5px;
+
+}
